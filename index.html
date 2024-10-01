@@ -10,40 +10,63 @@
   <h1 class="main_title">davidchavez.net</h1>
   <h2 class="main_text">Acerca de mi</h2>
   <p class="main_text">Mi nombre es David y me gusta mucho el desarollo de software. Con el objetivo de desarollar una aplicación para un proyecto escolar estaré haciendo uso de una página web
-    con la cual podré aprender acerca del desarollo web además de CSS, habilidades que me servirán para el desarollo de mi app usando React Native.
+    con la cual podré aprender acerca del desarollo web además de Java y TypeScript, habilidades que me servirán para el desarollo de mi app usando React Native.
   </p>
-  <img src="luffy.jpg" alt="Luffy sombrero de paja, el goat">
+  <img src="luffy.jpg" alt="Luffy sombrero de paja, el goat" class="centered_image">
   <h2 class="main_text">Acerca de la página</h2>
   <p class="main_text">Esta es mi página web que hice utilizando HTML y CSS, si haces clic en el botón de abajo te llevará mi página de GitHub donde guardo mis proyectos</p>
   <button class="github_link" onclick=window.location.href="https://github.com/davidchavezc/davidchavezc">
-  Ir a mi GitHub
+  Ir a mi github
   </button>
 </body>
 </html>
-
 <style>
   .github_link{
     background-color: orange;
     color: white;
     border-radius: 15px;
     border-style: none;
-    height: 30px;
-    width: 120px;
+    padding: 10px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s, font-size 0.3s;
-    font-family: 'Comic Sans MS',Comic Sans MS, regular;
+    transition: background-color 0.3s, font-size 0.3s, box-shadow 0.3s;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.45);
+    font-family: 'Comic Sans',Comic Sans MS, regular;
   }
   .github_link:hover{
     background-color: rgb(234, 152, 0);
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .github_link:active{
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
   }
   .main_text{
-    font-family: 'Comic Sans MS', Comic Sans MS, regular;
+    font-family: 'Comic Sans', Comic Sans MS, regular;
     text-align: justify;
   }
   .main_title{
-    font-family: 'Comic Sans MS', Comic Sans MS, regular;
+    font-family: 'Century Gothic';
     text-align: center;
+    font-style: regular;
+    box-shadow: 1px 1px 0.10px rgba(0, 0, 0, 0.15);
+    background-color: rgb(4, 72, 139);
+    color: rgb(30, 199, 255);
+    text-shadow: 1px 1px 10px rgba(3, 143, 260, 0.60);
+    transition: padding 0.3s;
+    font-size: 60px;
+  }
+  .main_title:hover{
+    padding: 6px;
+  }
+  .centered_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.30);
+    transition: width 0.3s;
+  }
+  .centered_image:hover{
+    width: 32%;
   }
 </style>
